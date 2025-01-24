@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+
+header h1 {
+    font-size: 2rem;
+    color: #4CAF50;
+}
+
+/* Estilo do grid */
+.profissionais {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+/* Estilo para cada profissional */
+.profissional {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+.profissional img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.profissional h2 {
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.profissional p {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 10px;
+}
+</style>
+<body>
+
+    <body class="b1">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img class="logo" src="img/Mundopet.png.png" alt="Logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Sobre Nós
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                <li><a class="dropdown-item" href="">Nossa Clínica</a></li>
+                                <li><a class="dropdown-item" href="objetivo.html">Nosso Objetivo</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Especialidades
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                
+                                <li><a class="dropdown-item" href="fisioterapia.html">Fisioterapia</a></li>
+                                <li><a class="dropdown-item" href="oftomologia (1).html">Oftalmologia</a></li>
+                                <li><a class="dropdown-item" href="odontologico.html">Odontologia</a></li>
+                                <li><a class="dropdown-item" href="ortopedia.html">Ortopedia</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Serviços
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                                <li><a class="dropdown-item" href="cirurgiageral.html">Cirurgia Geral</a></li>
+                                <li><a class="dropdown-item" href="Consultas.html">Consultas</a></li>
+                                <li><a class="dropdown-item" href="Internação.html">Internação</a></li>
+                                <li><a class="dropdown-item" href="quimioterapia.html">Quimioterapia</a></li>
+                                <li><a class="dropdown-item" href="vacinação.html">Vacinação</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Exames
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                                <li><a class="dropdown-item" href="endoscopi.html">Endoscopia</a></li>
+                                <li><a class="dropdown-item" href="coleta.html">Exame de Fezes</a></li>
+                                <li><a class="dropdown-item" href="sorologia.html">Sorologias</a></li>
+                                <li><a class="dropdown-item" href="teste.html">Testes Rápidos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                    <!-- Botão adicionado fora da lista -->
+                    <div class="top-bar">
+                        <button class="top-bar-button">Contato de urgência</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    
+    <header>
+        <h1>Conheça nossos profissionais</h1>
+    </header>
+
+    <section class="profissionais">
+        <div class="profissional">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFskA95eQ92j9GFUR3B9ZTqPVwAmJ0voyv-g&s" alt="Dr. João">
+            <h2>Dr. João Silva</h2>
+            <p>Especialista em cirurgia veterinária</p>
+        </div>
+        <div class="profissional">
+            <img src="https://www.faculdadeide.edu.br/files/news/16336396681984-profissionaldesucesso.jpeg" alt="Dra. Maria">
+            <h2>Dra. Maria Oliveira</h2>
+            <p>Especialista em clínica geral</p>
+        </div>
+        <div class="profissional">
+            <img src="https://avatars.githubusercontent.com/u/28939551?v=4" alt="Dr. Carlos">
+            <h2>Dr. Carlos Souza</h2>
+            <p>Especialista em dermatologia animal</p>
+        </div>
+        <div class="profissional">
+            <img src="https://www.faculdadeide.edu.br/files/news/16182561048668-crescimentoprofissionalquantooprofissionaldasadedeveinvestir.jpg" alt="Dra. Fernanda">
+            <h2>Dra. Fernanda Costa</h2>
+            <p>Especialista em odontologia veterinária</p>
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+    <section class="profissionais">
+        <div class="profissional">
+            <img src="https://img.freepik.com/fotos-gratis/conceito-de-clinica-veterinaria-medico-veterinario-feliz-segurando-o-cachorro-pug-preto-bonito-sorrindo-para-a-camera-fundo-branco_1258-75984.jpg" alt="Dr. João">
+            <h2>Dr. Cássio Silva</h2>
+            <p>Especialista em cirurgia veterinária</p>
+        </div>
+        <div class="profissional">
+            <img src="https://www.revistaveterinaria.com.br/wp-content/uploads/2013/03/m%C3%A9dico-veterinario-194x200.jpg" alt="Dra. Maria">
+            <h2>Dra. Fernanda   Maria</h2>
+            <p>Especialista em clínica geral</p>
+        </div>
+        <div class="profissional">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr_NCM-g373iahkxodg0I7ZQvSCxEB17tcIw&s" alt="Dr. Carlos">
+            <h2>Dr. Marcelo Augusto</h2>
+            <p>Especialista em dermatologia animal</p>
+        </div>
+        <div class="profissional">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHbZIXlgyXe8Z5ea_bs7qKwSBAYayf1O-3ee3UVO7eKRG0Y_2-dyEvEdXC3VcrqRlNeHM&usqp=CAU" alt="Dra. Fernanda">
+            <h2>Dra. Carla Araujo</h2>
+            <p>Especialista em odontologia veterinária</p>
+        </div>
+    </section>
+
+    <style>
+        /* Resetando algumas configurações de estilo */
+
+
+
+
+    </style>
+
+<div class="footer-container">
+    <footer class="footer">
+        <div class="footer-left">
+            <div class="footer-content">
+                <h3 class="titulo-footer">Clínica Veterinária Mundo Pet</h3>
+                <p class="titulo-footer">© 2025 - Todos os direitos reservados</p>
+            </div>
+            <div class="social-media">
+                <p class="titulo-footer">Siga-nos nas redes sociais:</p>
+                <a href="https://facebook.com" target="_blank" class="social-icon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+                </a>
+                <a href="https://instagram.com" target="_blank" class="social-icon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                </a>
+            <div class="whatsapp-contact">
+                <a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-button">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+                    <span class="titulo-footer">Fale conosco no WhatsApp</span>
+                </a>
+            </div>
+        </div>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37541.72642771243!2d-48.01667071065413!3d-16.078433909933242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935986a04bc69287%3A0x2df62ecea2daede5!2sShopping%20Sul!5e0!3m2!1sen!2sbr!4v1737571238176!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+
+</div>
+</body>
+</html>
