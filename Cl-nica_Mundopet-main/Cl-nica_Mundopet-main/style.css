@@ -1,0 +1,967 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+     
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+
+.b1 {
+    background-image: url('img/WhatsApp\ Image\ 2025-01-21\ at\ 5.09.38\ PM.jpeg');
+    background-repeat: repeat; /* Repete a imagem em ambas as direções */
+    background-size: auto; /* Tamanho original da imagem */
+}
+.img-inicio {
+position: relative;
+width: 100%; 
+aspect-ratio: 25 / 9; 
+object-fit: cover; 
+z-index: 0;
+}
+
+    .text-inicio {
+position: absolute; /* Posiciona o texto sobre a imagem */
+top: 50%; /* Centraliza verticalmente */
+left: 10%; /* Posiciona o texto à esquerda (ajustável) */
+transform: translate(0, -50%); /* Centraliza o texto no eixo Y */
+color: #ffffff; /* Cor do texto */
+font-size: 50px; /* Tamanho do texto */
+font-family: "Barriecito", serif;
+
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para melhorar a legibilidade */
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+.text-inicio {
+    font-size: 20px; /* Reduz o tamanho do texto para o mobile */
+    left: 5%; /* Ajusta a posição à esquerda para o mobile */
+    top: 15%; /* Ajusta a posição vertical do texto */
+    transform: translate(0, -40%); /* Centraliza o texto verticalmente no mobile */
+}
+}
+
+
+.navbar {
+background-color: #fdfdfd !important; /* Verde profissional */
+font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos de hover para os itens do menu */
+.navbar-nav .nav-link {
+color: #087375 !important;
+transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+color: #087375 !important; /* Cor suave para o hover */
+text-decoration: underline;
+}
+
+/* Estilos para o dropdown */
+.navbar-nav .dropdown-menu {
+background-color: #087375 !important; /* Verde suave para o menu suspenso */
+border-radius: 8px;
+}
+
+.navbar-nav .dropdown-item:hover {
+background-color: #087375; /* Cor mais escura para o hover do item */
+color: #ffffff; /* Texto branco */
+}
+
+/* Toggler */
+.navbar-toggler-icon {
+background-color: #087375; /* Verde um pouco mais claro para o ícone de alternância */
+}
+
+
+    /* Ajuste responsivo */
+    @media (max-width: 992px) {
+        .navbar-nav {
+            text-align: center;
+        }
+    }
+.teste {
+background: linear-gradient rgba(0, 0, 0, 0.5);
+z-index:1;
+}
+
+
+
+/* Estilos para a imagem */
+.img1 {
+width: 600px; /* Tamanho da imagem no desktop */
+height: 100%;
+transform: translate(80px, 250px); /* Move a imagem 50px para a direita e para baixo */
+transition: transform 0.5s ease;
+}
+
+/* Estilos para o texto */
+.text1 {
+margin-left: 950px; /* Posição do texto no desktop */
+transform: translateY(-400px);
+font-family: "Barriecito", serif;
+}
+
+
+/* Estilos para o parágrafo */
+.font {
+background-color: #087375;
+}
+
+/* Estilos para o parágrafo */
+.paragrafo {
+margin-left: 950px; /* Posição do parágrafo no desktop */
+transform: translateY(-250px);
+font-family: arial;
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+/* Responsividade para a imagem */
+@media (max-width: 768px) {
+    .img1 {
+        width: 50%; /* Reduz a largura no mobile */
+        max-width: 100%; /* Remove o limite de largura */
+        transform: translate(0, 0); /* Reseta qualquer movimentação no mobile */
+        margin-left: 115px;
+        margin-top: 80px;
+    }
+}
+
+
+/* Responsividade para o texto */
+.text1 {
+    margin-left: 0; /* Remove a margem à esquerda no mobile */
+    transform: translateY(0); /* Ajusta a posição do texto */
+    font-size: 18px; /* Tamanho da fonte ajustado para o mobile */
+    text-align: center; /* Alinha o texto ao centro no mobile */
+}
+@media (max-width: 768px) {
+    .text1 {
+        margin-left: 0; /* Remove a margem à esquerda no mobile */
+    transform: translateY(0); /* Ajusta a posição do texto */
+    font-size: 18px; /* Tamanho da fonte ajustado para o mobile */
+    text-align: center; /* Alinha o texto ao centro no mobile */
+    margin-top: 75px;
+    font-size: 36px;
+    }
+}
+
+/* Responsividade para o parágrafo */
+.paragrafo {
+    margin-left: 0; /* Remove a margem à esquerda no mobile */
+    transform: translateY(0); /* Ajusta a posição do parágrafo */
+    font-size: 14px; /* Tamanho da fonte ajustado para o mobile */
+    text-align: center; /* Alinha o parágrafo ao centro no mobile */
+}
+}
+.img1:hover {
+transform: translate(80px, 250px) scale(1.1); /* Aumenta a imagem ao passar o mouse */
+filter: brightness(1.2); /* Aumenta o brilho da imagem */
+}
+@media (max-width: 768px) {
+    .img1:hover {
+        transform: scale(1.05); /* Apenas um pequeno aumento no tamanho */
+        filter: brightness(1.1); /* Suaviza o brilho para telas menores */
+    }
+}
+
+.imgg {
+    display: block; /* Garante que seja tratado como um bloco */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    max-width: 100%; /* Garante responsividade */
+    height: auto; /* Mantém a proporção da imagem */
+    z-index: 1; /* Mantém a imagem em uma camada visível */
+    margin-left: 1395px;
+}
+@media (max-width: 768px) {
+    .imgg {
+        max-width: 50%; /* Garante responsividade */
+        margin-left: 200px;
+    }
+}
+
+/* Efeito de hover no desktop */
+.imgg:hover {
+    transform: scale(1.1); /* Apenas aumenta a imagem no hover */
+    filter: brightness(1.2); /* Ajusta o brilho */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Suaviza a animação */
+}
+
+/* Ajuste de responsividade */
+@media (max-width: 768px) {
+    .imgg:hover {
+        transform: scale(1.05); /* Reduz o aumento no hover para telas menores */
+        filter: brightness(1.1); /* Ajusta o brilho para um efeito mais suave */
+    }
+}
+.texin {
+background-color: #087375;
+}
+.logo {
+width: 120px;
+height: auto;
+
+
+
+
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        position: absolute; /* Remove a navbar do fluxo normal */
+        top: 150px; /* Ajuste a distância de acordo com a posição desejada */
+        width: 75%;
+        height: 200px; /* Move a navbar para a esquerda */
+    }
+    }
+
+
+
+/* Botão na barra superior */
+.top-bar {
+display: flex;
+align-items: center;
+margin-left: auto; /* Alinha o botão à direita */
+}
+
+
+
+.top-bar-button {
+background-color: #087375; /* Cor de fundo azul */
+color: #fff; /* Cor do texto branco */
+border: none;
+border-radius: 5px;
+padding: 10px 15px;
+font-size: 14px;
+font-weight: bold;
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+/* Efeito hover no botão */
+.top-bar-button:hover {
+background-color: #099092;
+transform: scale(1.05); /* Leve zoom */
+}
+
+/* Efeito ao clicar no botão */
+.top-bar-button:active {
+transform: scale(0.95); /* Reduz ligeiramente ao clicar */
+}
+
+/* Itens da navbar */
+.nav-item .nav-link {
+color: #000;
+font-weight: bold;
+margin: 0 10px;
+transition: color 0.2s ease;
+}
+
+.nav-item .nav-link:hover {
+color: #099092; /* Azul no hover */
+}
+
+/* Dropdown */
+.dropdown-menu {
+border-radius: 5px;
+border: none;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+/* Section principal */
+.specialties-section {
+display: flex;
+flex-direction: column; /* Empilha os elementos verticalmente */
+align-items: center; /* Centraliza os elementos horizontalmente */
+width: 100%; /* Garante que a seção ocupe toda a largura */
+padding: 20px; /* Adiciona espaço interno */
+box-sizing: border-box; /* Inclui padding no cálculo da largura */
+}
+
+/* Título da seção */
+.section-title {
+font-size: 44px;
+
+text-align: center; /* Centraliza o texto */
+margin-bottom: -10px; /* Aumenta o espaço entre o título e os cards */
+position: relative;
+top: -100px; /* Move o texto para cima */
+font-family: "Barriecito", serif;
+color: #087375;
+
+}
+@media (max-width: 768px) {
+    /* Responsividade para a imagem */
+    .section-title {
+    top: -25px; /* Move o texto para cima */   
+    font-size: 30px; /* Tamanho da fonte ajustado para o mobile */
+    }
+}
+
+/* Container dos cards */
+.card-container {
+display: flex;
+justify-content: center; /* Centraliza os cards horizontalmente */
+gap: 50px; /* Espaçamento entre os cards */
+flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha se necessário */
+margin-top: 20px; /* Caso queira mais espaço acima do container */
+}
+@media (max-width: 768px) {
+    /* Responsividade para a imagem */
+    .card-container{
+        width: 280px;
+        height: 200px;
+    }
+}
+
+
+/* Card individual */
+.card {
+background-color: #ffffff;
+border: 3px solid #087375;
+border-radius: 8px;
+text-align: center;
+padding: 20px;
+height: auto;
+width: 450px; /* Define a largura do card */
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+margin-top: 14px;
+}
+
+/* Imagem do card */
+.card-image {
+width: 20%;
+height: auto; /* Ajuste a altura da imagem conforme necessário */
+object-fit: cover; /* A imagem ocupa toda a área disponível sem distorcer */
+border-radius: 10px;
+margin-bottom: 20px; /* Espaçamento entre a imagem e o conteúdo do card */
+margin-left: 150px;
+}
+@media (max-width: 768px) {
+    /* Responsividade para a imagem */
+    .card-image{
+        margin-left: 90px;
+    }
+}
+
+/* Título do card */
+.card-title {
+font-size: 18px;
+font-weight: bold;
+margin: 10px 0;
+color: #087375;
+}
+
+/* Texto do card */
+.card-text {
+font-size: 14px;
+color: #666;
+line-height: 1.5;
+}
+
+/* Efeito ao passar o mouse */
+.card:hover {
+transform: translateY(-25px);
+box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+.buttoncard {
+background-color: #087375;
+color: #fff;
+border: none;
+border-radius: 5px;
+padding: 10px 15px;
+font-size: 14px;
+font-weight: bold;
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.2s ease;
+margin-top: 10px;
+margin-left: 10px;
+margin-top: 80px;
+}
+@media (max-width: 768px) {
+    /* Responsividade para a imagem */
+    .buttoncard{
+    margin-left: 6px;
+    margin-top: 855px;
+    }
+}
+.paragrafo-top {
+margin-top: 70px;
+margin-left: -5px;
+}
+
+
+
+
+
+
+
+/* Container da galeria */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas para as imagens */
+    gap: 15px; /* Espaçamento entre os itens */
+    padding: 20px; /* Espaçamento interno */
+    justify-items: center; /* Centraliza os itens dentro do grid */
+    border: 5px solid #087375; /* Borda externa da galeria */
+    border-radius: 15px; /* Bordas arredondadas da caixa */
+    background-color: #f9f9f9; /* Cor de fundo da galeria */
+    margin: 20px auto; /* Centraliza o container com margem automática */
+    width: 90%; /* Diminui a largura do container para 80% da tela */
+    max-width: 1200px; /* Limita a largura máxima do container */
+    margin-top: 110px;
+}
+@media (max-width: 768px) {
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr); /* Reduz para 2 colunas no mobile */
+        gap: 10px; /* Menor espaçamento entre itens */
+        padding: 10px; /* Reduz o espaçamento interno */
+        border-width: 2px; /* Bordas mais finas para economizar espaço */
+        margin-top: 50px; /* Menor margem superior */
+    }
+}
+
+
+/* Estilo dos itens da galeria */
+.gallery-item {
+    width: 100%; /* Garante que os itens ocupem toda a largura disponível */
+    overflow: hidden; /* Garante que as imagens não ultrapassem os limites */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor dos itens */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para efeitos */
+}
+
+/* Estilo das imagens dentro dos itens */
+.gallery-item img {
+    width: 100%; /* A imagem ocupa toda a largura do item */
+    height: 100%; /* A altura da imagem é ajustada para preencher o container */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    transition: transform 0.3s ease; /* Efeito de transição suave */
+}
+
+/* Efeito de hover nos itens da galeria */
+.gallery-item:hover {
+    transform: scale(1.05); /* Aumenta o item ao passar o mouse */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+}
+
+/* Efeito de hover na imagem */
+.gallery-item:hover img {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+}
+.text-galeria {
+    margin-top: 50px;
+    font-family: "Barriecito", serif;
+    color: #087375;
+    margin-left: 815px;
+}
+@media (max-width: 768px) {
+    /* Responsividade para a imagem */
+    .text-galeria{
+    margin-left: 17px;
+    font-size: 30px; /* Tamanho da fonte ajustado para o mobile */
+    margin-top: 100px;
+    margin-left: 95px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Container geral do footer */
+.footer-container {
+    background-color: #087375;
+    padding: 50px 20px; /* Ajuste de espaçamento superior/inferior */
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+}
+
+/* Footer principal */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza o footer na página */
+    gap: 30px; /* Espaçamento entre seções */
+}
+
+/* Estilo das seções */
+.footer-section {
+    flex: 1 1 300px; /* Melhor aproveitamento do espaço no desktop */
+    text-align: center;
+    padding: 20px 10px; /* Aumenta a margem interna para mais equilíbrio */
+}
+
+.footer h3, .footer h4 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 2px solid #055e5d;
+    padding-bottom: 8px;
+}
+
+.footer p {
+    margin: 10px 0;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* Redes sociais */
+.footer-social .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Aumenta a distância entre os ícones */
+}
+
+.social-icon img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover img {
+    transform: scale(1.2); /* Efeito mais visível ao passar o mouse */
+}
+
+/* Botão do WhatsApp */
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 20px; /* Botão mais confortável */
+    border-radius: 8px; /* Cantos levemente mais arredondados */
+    font-size: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.whatsapp-button img {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+}
+
+.whatsapp-button:hover {
+    background-color: #1ebe57;
+}
+
+/* Estilo do mapa */
+.footer-map iframe {
+    width: 100%;
+    height: 250px; /* Mapa mais proporcional */
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Adiciona leve destaque */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        flex: 1 1 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .footer-map iframe {
+        width: 90%; /* Margem interna no modo mobile */
+        height: 200px;
+    }
+}
+
+
+
+
+
+
+
+
+/* Paralax */
+.parallax {
+    position: relative;
+    background-image: url('https://blog4.mfrural.com.br/wp-content/uploads/2020/07/animais-domesticos-1024x654.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh; /* Altura da tela inteira */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-top: 150px;
+}
+
+.content1 {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semitransparente */
+    padding: 46px;
+    border-radius: 8px;
+    max-width: 100%;
+    width: 90%; /* Ajusta para o conteúdo não ultrapassar a tela */
+    box-sizing: border-box; /* Garante que o padding não ultrapasse o limite */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .parallax {
+        height: 40vh; /* Ajusta a altura para telas menores */
+    }
+
+    .content1 {
+        padding: 30px; /* Reduz o padding em telas menores */
+    }
+
+    h1 {
+        font-size: 6vw; /* Tamanho da fonte ajustado conforme a largura da tela */
+    }
+
+    p {
+        font-size: 3vw; /* Tamanho da fonte ajustado conforme a largura da tela */
+    }
+}
+
+@media (max-width: 768px) {
+    .parallax {
+        height: 50vh; /* Ajusta a altura para dispositivos móveis */
+    }
+
+    .content1 {
+        padding: 20px; /* Reduz ainda mais o padding */
+    }
+
+    h1 {
+        font-size: 8vw; /* Ajusta o tamanho do h1 */
+    }
+
+    p {
+        font-size: 4vw; /* Ajusta o tamanho do p */
+    }
+}
+
+@media (max-width: 480px) {
+    .parallax {
+        height: 60vh; /* Maior altura para telas muito pequenas */
+    }
+
+    .content1 {
+        padding: 15px; /* Diminui o padding em telas muito pequenas */
+    }
+
+    h1 {
+        font-size: 10vw; /* Ajusta o tamanho do h1 para telas muito pequenas */
+    }
+
+    p {
+        font-size: 5vw; /* Ajusta o tamanho do p para telas muito pequenas */
+    }
+}
+
+/* Paralax */
+
+
+
+/* Estilo do grid */
+.profissionais {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajuste do layout para preenchimento automático */
+    gap: 20px; /* Ajuste do espaço entre os cards */
+    align-content: start; /* Alinha os itens ao topo */
+    padding: 20px;
+    margin-left: 300px;
+}
+@media (max-width: 768px) {
+    /* Responsividade para a imagem */
+    .profissionais{
+    margin-left: 17px;
+    
+    }
+}
+
+
+/* Estilo para cada profissional */
+.profissional {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease; /* Transição suave */
+}
+
+.profissional:hover {
+    transform: translateY(-5px); /* Efeito de elevação no hover */
+}
+
+.profissional img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.profissional h2 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 10px; /* Mais espaço abaixo do nome */
+}
+
+.profissional p {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .profissionais {
+        grid-template-columns: 1fr 1fr; /* Dois itens por linha em telas menores */
+        gap: 10px; /* Menor espaçamento entre os cards */
+    }
+}
+
+@media (max-width: 480px) {
+    .profissionais {
+        grid-template-columns: 1fr; /* Um item por linha em telas muito pequenas */
+    }
+}
+
+
+.b1 {
+    background-image: url('IMG/WhatsApp\ Image\ 2025-01-21\ at\ 17.09.38.jpeg');
+    background-repeat: repeat; /* Repete a imagem em ambas as direções */
+    background-size: auto; /* Tamanho original da imagem */
+}
+
+
+.hero {
+    position: relative;
+    background: url('https://alphaveterinaria.com.br/img/services/cirurgia-em-animais-em-guarulhos.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade e cor aqui */
+    z-index: 1;
+}
+
+.hero h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background: rgb(8, 115, 117);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 20px;
+}
+
+.content {
+    flex: 2;
+}
+
+.form-container {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Listas */
+ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+/* Formulários */
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, textarea, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Botões */
+button {
+    background-color: rgb(8, 115, 117);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(4, 147, 150);
+}
+
+
+
+/* FAQ */
+.faq {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faq h2 {
+    margin-bottom: 20px;
+    color: #087375;
+}
+.faq {
+    width: 1000%; /* Garante que a seção ocupe 100% da largura disponível */
+    max-width: 1200px; /* Limita a largura máxima para manter a estética */
+    margin: 0 auto; /* Centraliza a seção na tela */
+    padding: 30px; /* Espaçamento interno igual ao da seção de conteúdo */
+    background-color: #f9f9f9; /* Cor de fundo para destacar a seção */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Ajustar a altura e a formatação das perguntas e respostas */
+.accordion-button {
+    font-size: 1.1rem; /* Tamanho de fonte adequado */
+    padding: 15px; /* Mais espaço ao redor do texto */
+}
+
+.accordion-body {
+    font-size: 1rem; /* Tamanho da fonte para as respostas */
+    padding: 20px; /* Espaçamento interno */
+}
+
+.bd1{
+    background-image: url('IMG/Background.jpg');
+    background-repeat: repeat; /* Repete a imagem em ambas as direções */
+    background-size: auto; /* Tamanho original da imagem */
+}
+
+
+.doutor {
+    font-family: "Barriecito", serif;
+}
+
+/* Definir o estilo do popup */
+.whatsapp-popup {
+    position: fixed;
+    bottom: 20px; /* Distância da parte inferior da tela */
+    right: 20px;  /* Distância da parte direita da tela */
+    z-index: 9999; /* Garantir que o botão esteja acima de outros elementos */
+}
+
+.whatsapp-popup a {
+    display: block;
+    background-color: #25D366; /* Cor de fundo do botão */
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-popup a:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+.whatsapp-popup img {
+    width: 40px;  /* Tamanho do ícone */
+    height: 40px;
+}
+
+/* Adiciona uma pequena animação para o ícone de WhatsApp */
+@keyframes popIn {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+
+.whatsapp-popup a {
+    animation: popIn 0.5s ease-in-out;
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
